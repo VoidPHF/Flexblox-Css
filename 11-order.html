@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Fundamentos - order</title>
+
+    <style>
+        .flex-container{
+            display: flex;
+            border: 1px solid black;
+            max-width:300px;
+            margin-bottom: 20px;
+
+        }
+
+        .item{
+            background-color: rgb(255, 0, 183);
+            font-size: 24px;
+            margin: 5px;
+            text-align: center;
+            color: white;
+            }
+
+        .o1{order: 1;}
+
+        .o2{order: 2;}
+        
+        .o3{order: 3;}
+
+        .o4{order: 4;}
+  </style>
+</head>
+<body>
+
+    <p>order:0</p>
+    <div class="flex-container">
+        <div class="item">A</div>
+        <div class="item">B</div>
+        <div class="item">C</div>
+        <div class="item">D</div>
+    </div>
+
+    <p>order:diferentes</p>
+    <div class="flex-container">
+        <div class="item o2">A</div>
+        <div class="item o1">B</div>
+        <div class="item o1">C</div>
+        <div class="item o3">D</div>
+        <div class="item o1">A2</div>
+        <div class="item o2">B3</div>
+        <div class="item o3">C4</div>
+        <div class="item o2">D5</div>
+    </div>
+ <!--tbm tem como fazer em colunas-->
+</body>

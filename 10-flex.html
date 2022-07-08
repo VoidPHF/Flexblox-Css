@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Fundamentos - flex</title>
+
+    <style>
+        .flex-container{
+            display: flex;
+            border: 1px solid black;
+            max-width:400px;
+            margin-bottom: 10px;
+
+        }
+
+        .item{
+            background-color: rgb(255, 0, 0);
+            font-size: 24px;
+            margin: 5px;
+            text-align: center;
+            }
+
+            .flex-1{flex: 1;} /* vai informar na sequencia grow, shrink e basis. Assim, fazendo os 2 primeiros se tornem com o valor 1(menos o basis, que se mantem em 0)*/
+            
+            .flex-2{flex: 2;}
+
+        .largura{
+            width: 200px;
+        }
+        </style>
+        </head>
+<body>
+    <p>flex: 1</p>
+    <div class="flex-container">
+        <div class="item flex-1">A</div>
+        <div class="item flex-1">Bbbbbbesee</div>
+        <div class="item flex-1">Cc</div>
+        <div class="item flex-1">D</div>
+        <div class="item flex-1">E</div>
+        
+    </div>
+
+    <p>flex: mix</p>
+    <div class="flex-container">
+        <div class="item flex-1">A</div>
+        <div class="item flex-2">Bbbbbbesee</div>
+        <div class="item flex-2">Cc</div>
+        <div class="item flex-1">D</div>
+        <div class="item flex-1">E</div>
+        
+    </div>
+
+    <p> é width ignorado pelo basis=0</p>
+    <div class="flex-container">
+        <div class="item flex-1 largura">A</div>
+        <div class="item flex-1 largura">Bbbbbbesee</div>
+        <div class="item flex-1 largura">Cc</div>
+        <div class="item flex-1 largura">D</div>
+        <div class="item flex-1 largura">E</div>
+        
+    </div>

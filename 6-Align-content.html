@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Fundamentos - Align content</title>
+    <style>
+        .container{
+            height: 500px;
+            max-width: 250px;
+            margin: 0 auto;
+            display: flex;
+            flex-wrap: wrap;
+            border: 1px solid black;
+        }
+
+        .item{
+            background-color: orangered;
+            padding: 0px 5px;
+            margin: 5px;
+            flex: 1;
+            text-align: center;
+            color: white;
+            border: 2px solid black;
+        }
+
+        .stretch{
+            align-content: stretch;
+        }
+
+        .center{
+            align-content: center;
+        }
+
+        .flex-start{
+            align-content: flex-start;
+        }
+        
+        .flex-end{
+            align-content: flex-end;
+        }
+    </style>
+</head>
+<body>
+    <p>stretch</p>
+    <div class="container stretch">
+        <div class="item">Lorem ipsum dolor sit amet, consectetur adipisicing elit. U</div>
+        <div class="item">lorem impsu is therefore</div>
+        <div class="item">Lorem ipsum dolor sit, amet conquasi accusamus, minus culpa n</div>
+        <div class="item">Lorem consectetur corrup</div>
+        <div class="item">Lorem ipsum dolor sit, amet consectetuacilis neque adi</div>
+        <div class="item">Lorem ipsum dolor sit amet consectetur adipisicing elit. Quis, tio </div>
+        <div class="item">Lorem ipsum dolor sit amet consectetur adipisicing eli</div>
+        <div class="item">Lorem ipsum dolor sit, amet consanditiis fug</div>
+    </div>
+
+    <p>center</p>
+    <div class="container center">
+        <div class="item">Lorem ipsum dolor sit amet, consectetur adipisicing elit. U</div>
+        <div class="item">lorem impsu is therefore</div>
+        <div class="item">Lorem ipsum dolor sit, amet conquasi accusamus, minus culpa n</div>
+        <div class="item">Lorem consectetur corrup</div>
+        <div class="item">Lorem ipsum dolor sit, amet consectetuacilis neque adi</div>
+        <div class="item">Lorem ipsum dolor sit amet consectetur adipisicing elit. Quis, tio </div>
+        <div class="item">Lorem ipsum dolor sit amet consectetur adipisicing eli</div>
+        <div class="item">Lorem ipsum dolor sit, amet consanditiis fug</div>
+    </div>
+    
+    <p>flex-start</p>
+    <div class="container flex-start">
+        <div class="item">Lorem ipsum dolor sit amet, consectetur adipisicing elit. U</div>
+        <div class="item">lorem impsu is therefore</div>
+        <div class="item">Lorem ipsum dolor sit, amet conquasi accusamus, minus culpa n</div>
+        <div class="item">Lorem consectetur corrup</div>
+        <div class="item">Lorem ipsum dolor sit, amet consectetuacilis neque adi</div>
+        <div class="item">Lorem ipsum dolor sit amet consectetur adipisicing elit. Quis, tio </div>
+        <div class="item">Lorem ipsum dolor sit amet consectetur adipisicing eli</div>
+        <div class="item">Lorem ipsum dolor sit, amet consanditiis fugd</div>
+
+    
+    </div>
+
+    <div>
+        <p>flex-end</p>
+        <div class="container flex-end">
+        <div class="item">Lorem ipsum dolor sit amet, consectetur adipisicing elit. U</div>
+        <div class="item">lorem impsu is therefore</div>
+        <div class="item">Lorem ipsum dolor sit, amet conquasi accusamus, minus culpa n</div>
+        <div class="item">Lorem consectetur corrup</div>
+        <div class="item">Lorem ipsum dolor sit, amet consectetuacilis neque adi</div>
+        <div class="item">Lorem ipsum dolor sit amet consectetur adipisicing elit. Quis, tio </div>
+        <div class="item">Lorem ipsum dolor sit amet consectetur adipisicing eli</div>
+        <div class="item">Lorem ipsum dolor sit, amet consanditiis fug</div>
+    </div>
+    <!--podemos fazer com o space-around e space-between também-->
+</body>
+</html>
